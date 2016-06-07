@@ -1,0 +1,13 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Jun 07 17:36:13 SGT 2016
+https\://github.com/[username]/[repo-name]/raw/master/.error=Could not transfer artifact my.com.infopro.util\:util-common\:pom\:1.0 from/to git-[username] (https\://github.com/[username]/[repo-name]/raw/master/)\: Illegal character in path at index 19\: https\://github.com/[username]/[repo-name]/raw/master/my/com/infopro/util/util-common/1.0/util-common-1.0.pom
+default-https\://github.com/utilityteam/[repo-name]/raw/master/.lastUpdated=1465292162775
+http\://repo.maven.apache.org/maven2/.lastUpdated=1465292056945
+https\://github.com/utilityteam/mvn-repo/raw/master/.lastUpdated=1465292173034
+http\://10.10.6.105\:8090/nexus-1.1.0/content/repositories/thirdparty/.lastUpdated=1465292107899
+default-https\://github.com/[username]/[repo-name]/raw/master/.lastUpdated=1465292139786
+http\://repo.maven.apache.org/maven2/.error=
+http\://10.10.6.105\:8090/nexus-1.1.0/content/repositories/thirdparty/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1465291818975
+https\://repo.maven.apache.org/maven2/.error=
+https\://github.com/utilityteam/[repo-name]/raw/master/.error=Could not transfer artifact my.com.infopro.util\:util-common\:pom\:1.0 from/to git-utilityteam (https\://github.com/utilityteam/[repo-name]/raw/master/)\: Illegal character in path at index 31\: https\://github.com/utilityteam/[repo-name]/raw/master/my/com/infopro/util/util-common/1.0/util-common-1.0.pom

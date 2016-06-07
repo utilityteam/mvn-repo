@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu May 26 10:41:03 SGT 2016
+jni4net.j-0.8.8.0.pom>=
+jni4net.j-0.8.8.0-javadoc.jar>central=
+jni4net.j-0.8.8.0-sources.jar>central=
+jni4net.j-0.8.8.0.jar>=

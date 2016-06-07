@@ -1,0 +1,115 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>my.com.infopro.util</groupId>
+	<artifactId>util-icba9-print</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+
+	<name>util-icba9-print</name>
+	<url>http://www.infopro.com.my/</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java-version>1.6</java-version>
+		<junit-version>3.8.1</junit-version>
+		<oracle-frmall-version>10.1.2.3</oracle-frmall-version>
+		<log4j-version>1.2.17</log4j-version>
+		<util-common-version>1.0</util-common-version>
+		<util-logging-version>1.0</util-logging-version>
+		<util-icba9-file-version>1.0</util-icba9-file-version>
+		<itext-version>2.1.7</itext-version>
+		<icepdf-version>4.3.4</icepdf-version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit-version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>frmall</artifactId>
+			<version>${oracle-frmall-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j-version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>${itext-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.icepdf</groupId>
+			<artifactId>icepdf-core</artifactId>
+			<version>${icepdf-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.icepdf</groupId>
+			<artifactId>icepdf-viewer</artifactId>
+			<version>${icepdf-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>my.com.infopro.util</groupId>
+			<artifactId>util-common</artifactId>
+			<version>${util-common-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>my.com.infopro.util</groupId>
+			<artifactId>util-logging</artifactId>
+			<version>${util-logging-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>my.com.infopro.util</groupId>
+			<artifactId>util-icba9-file</artifactId>
+			<version>${util-icba9-file-version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+
+		<testResources>
+			<testResource>
+				<directory>${project.basedir}/src/test/resources</directory>
+			</testResource>
+		</testResources>
+	</build>
+
+
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<name>Icba10 Nexus Repository</name>
+			<url>http://10.10.6.105:8090/nexus-1.1.0/content/repositories/thirdparty</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>
